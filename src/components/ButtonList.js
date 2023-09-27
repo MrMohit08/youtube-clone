@@ -1,22 +1,21 @@
 import React from 'react'
-import Button from './Button'
-
+import Button from "./Button";
+const list = ["Music","Live","Stocks","Motivation","Shark Tank","News","Body building","Recent Uploads"]
 const ButtonList = () => {
   return (
-    <div className='flex'>
-      <Button name="Dramedy" />
-      <Button name="Cricket" />
-      <Button name="Sitcom" />
-      <Button name="Cooking" />
-      <Button name="News" />
-      <Button name="Politics" />
-      <Button name="History" />
-      <Button name="Learning" />
-      <Button name="Music" />
-      <Button name="Comedy" />
-      <Button name="Travelling" />
+    <div className='flex '>
+    <Button name ="All"/>
+    {list.map((item, index) => (
+  
+    <Button name={item} id={index} />
+  
+))}
     </div>
   )
 }
 
-export default ButtonList;
+export default ButtonList
+
+
+
+

@@ -5,10 +5,10 @@ import { Outlet } from 'react-router-dom'
 const Body = () => {
   return (
     <div className='flex'>
-        <Sidebar />
-        <Outlet />
+    <Sidebar />
+    <Outlet/>
     </div>
   )
 }
 
-export default Body;
+export default Body
